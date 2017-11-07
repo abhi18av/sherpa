@@ -9,6 +9,9 @@
                  [com.rpl/specter "1.0.4"]
                  [prismatic/plumbing "0.5.4"]
 
+
+;; for dealing with the EDN/JSON values
+                 [com.cognitect/transit-clj "0.8.300"]
 ;; for shelling out to other utilities
                  [me.raynes/conch "0.8.0"]
 ;; for interacting with basecamp API
