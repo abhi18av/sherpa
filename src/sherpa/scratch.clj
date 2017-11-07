@@ -5,9 +5,11 @@
 
 (def ACCOUNT_ID "3842603")
 
-(def CHATBOT_KEY "daJ8YotkogjtYejB7JhWgFHA")
+(def CHATBOT_KEY "sXwFHkuH6dSNcge3c27eKgZc")
 
 (def BUCKET "5152297")
+
+(def PROJECT "710484221")
 
 
 (def campfire
@@ -15,11 +17,12 @@
    "https://3.basecamp.com/" ACCOUNT_ID
    "/integrations/" CHATBOT_KEY
    "/buckets/" BUCKET
-   "/chats/710484221/lines"))
+   "/chats/" PROJECT
+   "/lines"))
 
 
 (client/post campfire
-             {:body "{\"content\": \"This is now working!\"}"
+             {:body "{\"content\": \"Oji!\"}"
               :content-type :json})
 
 
@@ -43,3 +46,7 @@ http POST  https://3.basecamp.com/3842603/integrations/daJ8YotkogjtYejB7JhWgFHA/
 ;; curl command
 
 curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCOUNT_ID/projects.json
+
+
+;;;; A-Infinite application
+

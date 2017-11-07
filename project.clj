@@ -8,8 +8,8 @@
                  [im.chit/lucid "1.3.13"]
                  [com.rpl/specter "1.0.4"]
                  [prismatic/plumbing "0.5.4"]
-
-
+ ;; for managing the environment variables
+                 [environ "1.1.0"]
 ;; for dealing with the EDN/JSON values
                  [com.cognitect/transit-clj "0.8.300"]
 ;; for shelling out to other utilities
@@ -20,6 +20,7 @@
                  [hiccup "1.0.5"]
 ;; for logging purposes
                  [com.fzakaria/slf4j-timbre "0.3.7"]]
+  :plugins [[lein-environ "1.1.0"]]
   :main ^:skip-aot sherpa.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
