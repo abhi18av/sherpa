@@ -8,8 +8,13 @@
                  [im.chit/lucid "1.3.13"]
                  [com.rpl/specter "1.0.4"]
                  [prismatic/plumbing "0.5.4"]
+
+;; for shelling out to other utilities
+                 [me.raynes/conch "0.8.0"]
 ;; for interacting with basecamp API
                  [clj-http "3.7.0"]
+;; for styling the HTML content
+                 [hiccup "1.0.5"]
 ;; for logging purposes
                  [com.fzakaria/slf4j-timbre "0.3.7"]]
   :main ^:skip-aot sherpa.core
