@@ -8,7 +8,12 @@
                  [im.chit/lucid "1.3.13"]
                  [com.rpl/specter "1.0.4"]
                  [prismatic/plumbing "0.5.4"]
- ;; for managing the environment variables
+
+;; pure clojure database
+				 [codax "1.1.0-SNAPSHOT"]
+;; for exploring data structures	
+				 [datawalk "0.1.10"]
+;; for managing the environment variables
                  [environ "1.1.0"]
 ;; for dealing with the EDN/JSON values
                  [com.cognitect/transit-clj "0.8.300"]
