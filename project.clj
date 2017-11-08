@@ -10,9 +10,9 @@
                  [prismatic/plumbing "0.5.4"]
 
 ;; pure clojure database
-         [codax "1.1.0-SNAPSHOT"]
+                 [codax "1.1.0-SNAPSHOT"]
 ;; for exploring data structures
-         [datawalk "0.1.10"]
+                 [datawalk "0.1.10"]
 ;; for managing the environment variables
                  [environ "1.1.0"]
 ;; for dealing with the EDN/JSON values
@@ -21,7 +21,6 @@
                  [me.raynes/conch "0.8.0"]
 ;; for interacting with basecamp API
                  [http-kit "2.2.0"]
-
 ;; for styling the HTML content
                  [hiccup "1.0.5"]
 ;; for logging purposes
