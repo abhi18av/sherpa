@@ -1,15 +1,7 @@
 (ns sherpa.scratch
-  (:require [clj-http.client :as client]))
+  (:require [clj-http.client :as client]
+            [sherpa.secrets :as secrets]))
 
-
-
-(def ACCOUNT_ID "3842603")
-
-(def CHATBOT_KEY "sXwFHkuH6dSNcge3c27eKgZc")
-
-(def BUCKET "5152297")
-
-(def PROJECT "710484221")
 
 
 (def campfire

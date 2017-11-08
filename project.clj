@@ -10,9 +10,9 @@
                  [prismatic/plumbing "0.5.4"]
 
 ;; pure clojure database
-				 [codax "1.1.0-SNAPSHOT"]
-;; for exploring data structures	
-				 [datawalk "0.1.10"]
+         [codax "1.1.0-SNAPSHOT"]
+;; for exploring data structures
+         [datawalk "0.1.10"]
 ;; for managing the environment variables
                  [environ "1.1.0"]
 ;; for dealing with the EDN/JSON values
