@@ -15,3 +15,4 @@ pom.xml.asc
 src/sherpa/secrets\.clj
 
 _resources
+.DS_Store
