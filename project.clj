@@ -20,7 +20,8 @@
 ;; for shelling out to other utilities
                  [me.raynes/conch "0.8.0"]
 ;; for interacting with basecamp API
-                 [clj-http "3.7.0"]
+                 [http-kit "2.2.0"]
+
 ;; for styling the HTML content
                  [hiccup "1.0.5"]
 ;; for logging purposes

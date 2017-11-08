@@ -1,5 +1,7 @@
 (ns sherpa.scratch
-  (:require [clj-http.client :as client]
+  (:require
+;   [clj-http :as http]
+            [org.httpkit.client :as http]
             [sherpa.secrets :as secrets]))
 
 
@@ -30,7 +32,7 @@ http POST  https://3.basecamp.com/3842603/integrations/daJ8YotkogjtYejB7JhWgFHA/
 
 (def res (client/get "https://3.basecamp.com/3842603/projects.json"
             {
-:headers 
+:headers
             ; :body "{\"content\": \"This is now working!\"}"
               :content-type :json}))
 
@@ -41,4 +43,3 @@ curl -s -H "Authorization: Bearer $ACCESS_TOKEN" https://3.basecampapi.com/$ACCO
 
 
 ;;;; A-Infinite application
-
