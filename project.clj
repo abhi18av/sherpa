@@ -20,11 +20,15 @@
 ;; for shelling out to other utilities
                  [me.raynes/conch "0.8.0"]
 ;; for interacting with basecamp API
-                 [http-kit "2.2.0"]
+                 [clj-http "3.7.0"]
+;                 [http-kit "2.2.0"]
 ;; for styling the HTML content
                  [hiccup "1.0.5"]
 ;; for logging purposes
-                 [com.fzakaria/slf4j-timbre "0.3.7"]]
+                 [com.fzakaria/slf4j-timbre "0.3.7"]
+                 [com.taoensso/timbre "4.10.0"]
+
+                 ]
   :plugins [[lein-environ "1.1.0"]]
   :main ^:skip-aot sherpa.core
   :target-path "target/%s"

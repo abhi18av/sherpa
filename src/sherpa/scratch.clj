@@ -1,20 +1,57 @@
 (ns sherpa.scratch
   (:require
-   [org.httpkit.client :as http]
-   [sherpa.secrets :as secrets]))
+   [sherpa.secrets :as secrets]
+   [clj-http.client :as client]
+   [clojure.data.json :as json]))
 
 (def campfire
   (str
    "https://3.basecamp.com/" (secrets/credentials :ACCOUNT_ID)
    "/integrations/" (secrets/credentials :CHATBOT_KEY)
    "/buckets/" (secrets/credentials :BUCKET)
-   "/chats/" (secrets/credentials :PROJECT)
+   "/chats/" (secrets/credentials :CHATS)
    "/lines"))
+
+
+
+(client/post campfire
+             {:accept :json
+              :body "{\"content\": \"clj-http\"}"})
+
+
+
+(json/write-str {"a" "A"})
+
+(client/post campfire
+             {
+              :content :application/json
+              :content-type :json
+              :body ( json/write-str
+                     {"content" "clj-http"})})
+
+
+
+
+
+
+
+
 
 @(http/post campfire
             {:body "{\"content\": \"Oji!\"}"
-             :content-type :json
-             :keepalive 1000})
+             :content-type :json})
+
+@(http/post campfire
+            {:body (json/write { "content" "Oji!" })})
+
+
+
+@(http/post campfire
+            {:body  "Oji!"
+             :content-type :json})
+
+
+
 
 ;;
 
