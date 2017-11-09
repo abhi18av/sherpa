@@ -16,3 +16,4 @@ src/sherpa/secrets\.clj
 
 _resources
 .DS_Store
+/src/sherpa/httpie/chatbots.el
